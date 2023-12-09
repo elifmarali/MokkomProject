@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
+
+:root {
+  --main-color: gray;
+  --black-color: #000000;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.4s ease;
+}
+
+html {
+  font-size: 62.5%;
+  /* tam sayı olması için px rem dönüşümü (10px=1rem)*/
+  overflow-x: hidden;
+  /* yatay eksende scroll bar gizleme */
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  /* geçişlerin yumuşak olması içim */
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+section {
+  padding: 3.5rem 7%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 2rem 3.75rem;
+  border-radius: 30rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: var(--black-color);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: gray;
+  color: black;
+}
+
+.heading {
+  color: black;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 3.5rem;
+  border-bottom: 0.3rem solid black;
+}
+
+.logo {
+  width: 200px;
+  height: 80px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.buttons {
+  width: 20px;
+  height: 20px;
+}
+
+.email-input {
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem;
+  text-transform: none;
+  border-radius: 3rem;
+}
+
+/* header  başlangıç*/
+.header .logo img {
+  height: 10rem;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 3%;
+  margin: 2rem 7%;
+  border-radius: 30rem;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* header'ın her zaman önde olması için */
+}
+
+.header .navbar a {
+  margin: 0 3rem;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  border-bottom: 0.2rem solid transparent;
+}
+
+.header .navbar a:hover {
+  border-color: black;
+  padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: transparent;
+}
+
+/* header bitiş */
+
+/* sepet */
+
+.header .cart-items-container {
+  position: absolute;
+  top: 77%;
+  height: auto;
+  width: 35rem;
+  background-color: rgb(63, 85, 90);
+  box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+  display: none;
+  right: 2%;
+  border-radius: 3rem;
+  padding: 20px;
+}
+
+.header .cart-items-container .active {
+  right: 3rem;
+}
+
+.header .cart-items-container .cart-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 18px;
+  border-radius: 3rem;
+}
+
+.header .cart-items-container .cart-item:hover {
+  box-shadow: 0px 0px 8px 0px white;
+}
+
+.header .cart-items-container .btn {
+  width: 100%;
+  text-align: center;
+  border-radius: unset;
+  border-radius: 1.5rem;
+}
+
+.header .cart-items-container .btn:hover {
+  background-color: #fff;
+}
+
+.header .cart-items-container .cart-item .fa-times {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  /* color: var(--black-color); */
+}
+
+.header .cart-items-container .cart-item .content h3 {
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 0.5rem;
+}
+
+.header .cart-items-container .cart-item .content .price {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  /* color: var(--black-color); */
+}
+
+.header .cart-items-container .cart-item img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 1rem;
+}
+
+.empty-cart-message {
+  font-size: 17px;
+  color: white;
+}
+
+/* sepet */
+
+/* home başlangıç */
+.home {
+  min-height: 101vh;
+  background: url(bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -12.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.home .content {
+  min-width: 60rem;
+  margin-left: 40rem;
+}
+
+.home .content h3 {
+  font-size: 5rem;
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+.home .content p {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3;
+  margin-left: 25rem;
+  padding: 1rem 20rem;
+  color: white;
+}
+
+/* home bitiş */
+
+/* products start */
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.products .box-container .box {
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.products .box-container .box h3 {
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.products .box-container .box img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+}
+
+/* products end */
+
+/* about start */
+.about .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+/* .about .row .image {
+  flex: 1 1 45rem;
+} */
+.about .row img {
+  width: 100%;
+}
+
+.about .row .content h3 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.about .row .content p {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  text-transform: none;
+}
+
+/* about end */
+
+/* contact start */
+.contact .row {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form h3 {
+  font-size: 3.5rem;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  border: thick double var(--black-color);
+  font-size: 2rem;
+}
+
+.contact .row form .inputBox i {
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.8rem;
+  text-transform: none;
+}
+
+/* contact end */
+
+/* footer start */
+.footer {
+  background-color: var(--black-color);
+  text-align: center;
+  height: 20rem;
+}
+
+.footer .email {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .email .email-input {
+  width: 30rem;
+}
+
+.footer .email .btn-primary {
+  background-color: var(--main-color);
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+}
+
+.footer .share {
+  padding: 2rem 0;
+}
+
+.footer .share a {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: white;
+  font-size: 2rem;
+  border: solid white;
+  border-radius: 50%;
+  margin: 0.3rem;
+  background-color: var(--main-color);
+}
+
+.footer .share a:hover {
+  /* background-color: gray; */
+  color: var(--black-color);
+}
+
+.footer .time {
+  color: #fff;
+  background-color: var(--black-color);
+  text-align: center;
+}
+
+/* footer end */
+
+/* responsive start */
+/* @media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .header .logo img {
+    height: 7rem;
+  }
+} */
+/* responsive end */
+
+/* listing start */
+.listing .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.listing .box-container .box {
+  position: relative;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 3rem;
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.listing .box-container .box h3 {
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.listing .box-container .box .box-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 10;
+}
+
+.listing .box-container .box .box-head .title {
+  font-size: 1.4rem;
+}
+
+.listing .box-container .box .box-head .name {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: start;
+  color: black;
+}
+
+.listing .box-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.listing .box-container .img2 {
+  height: 40rem;
+}
+
+.listing .box-container .img1 {
+  height: 40rem;
+}
+
+.listing .box-container .box-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* .listing .box-container .box-bottom .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+} */
+
+.listing .box-container .box-bottom .info .price {
+  font-size: 3.5rem;
+  margin-right: 20rem;
+}
+
+.listing .box-container .box-bottom .listing-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 6.5rem;
+  height: 6.5rem;
+  border: 0.2rem solid black;
+  color: #000000;
+}
+
+.listing .box-container .box-bottom .listing-btn a i {
+  font-size: 1.6rem;
+}
+
+/* listing end */
+
+/* bootstrap icon at footer start*/
+.bootstrapicon {
+  margin-left: 10rem;
+}
+
+.bootstrapicon .mail {
+  margin-left: 1rem;
+}
+
+.bootstrapicon .phone {
+  margin-left: 1rem;
+}
+
+/* bootstrap icon at footer end*/

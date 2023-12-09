@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim</title>
+
+    <!-- icon kütüphanesi -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header başlangıç -->
+    <header class="header">
+      <a href="index.html">
+        <img src="logos.webp" class="logo" alt="" />
+      </a>
+      <nav class="navbar">
+        <a href="necklace.html">Kolye</a>
+        <a href="bracelet.html">Bileklik</a>
+        <a href="ring.html">Yüzük</a>
+        <a href="#about">Siparişler Hakkında</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+      <!-- Sepete elle eklenen ürünler başlangıç -->
+      <div class="buttons">
+        <button id="buttonsShoping">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </div>
+      <div class="cart-items-container" id="cardContainer"></div>
+      <!-- Sepete elle eklenen ürünler son -->
+    </header>
+    <!-- Header son -->
+
+    <!-- bootstrap icon start -->
+    <div class="bootstrapicon">
+      <svg
+        class="location"
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="currentColor"
+        class="bi bi-geo-alt-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+        />
+      </svg>
+      <svg
+        class="mail"
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="currentColor"
+        class="bi bi-envelope"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+        />
+      </svg>
+      <svg
+        class="phone"
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        fill="currentColor"
+        class="bi bi-telephone"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+        />
+      </svg>
+    </div>
+    <!-- bootstrap icon end -->
+
+    <!-- contact section start -->
+    <seciton class="contact">
+      <h1 style="margin-left: 10rem; margin-right: 10rem" class="heading">
+        İletişim
+      </h1>
+      <div
+        style="margin-left: 10rem; margin-right: 10rem; margin-bottom: 5rem"
+        class="row"
+      >
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37267.143196701545!2d29.008726510064648!3d41.02212157084492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab776a3d8d151%3A0x806c5b45845f4c0f!2zw5xza8O8ZGFyIE1leWRhbg!5e0!3m2!1str!2str!4v1701075861430!5m2!1str!2str"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form>
+          <h3>İletişime Geçin</h3>
+          <div class="inputBox">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Ad Soyad" />
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="E-mail" />
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-phone"></i>
+            <input type="number" placeholder="Telefon" />
+          </div>
+          <div class="inputBox">
+            <i class="fa-solid fa-pencil"></i>
+            <input type="text" placeholder="Mesajınız" />
+          </div>
+          <input type="submit" class="btn" value="Gönder" />
+        </form>
+      </div>
+    </seciton>
+    <!-- contact section end -->
+
+    <!-- footer section start -->
+    <section class="footer">
+      <div class="email">
+        <input
+          type="text"
+          class="email-input"
+          placeholder="E-mail adresinizi giriniz"
+        />
+        <button class="btn btn-primary">Abone Olun</button>
+      </div>
+      <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a
+          href="https://www.instagram.com/mokkomaccessories/"
+          class="fab fa-instagram"
+        ></a>
+        <a
+          href="https://tr.pinterest.com/MokkomAccessories"
+          class="fab fa-pinterest"
+        ></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a
+          href="https://www.etsy.com/shop/MokkomAccessories"
+          class="fab fa-etsy"
+        ></a>
+      </div>
+      <div class="time" id="zaman"></div>
+    </section>
+    <!-- footer section end -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
